@@ -1,0 +1,11 @@
+package com.neusoft.web.impl;
+
+public class EA0701QueryServlet extends EA0701ControllerSupport
+{
+	@Override
+	public String execute() throws Exception 
+	{
+		this.savePageData();
+		return "queryTviolation";
+	}
+}

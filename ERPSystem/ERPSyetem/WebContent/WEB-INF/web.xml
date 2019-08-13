@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GBK"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  	<display-name>ERPSystem</display-name>
+	<error-page>  
+	    <error-code>500</error-code>  
+	    <location>/error-500.jsp</location>  
+	</error-page> 
+	<error-page>  
+	    <error-code>404</error-code>  
+	    <location>/error-404.jsp</location>  
+	</error-page>
+	<servlet>
+		<servlet-name>DownLoad Servlet</servlet-name>
+		<servlet-class>com.neusoft.web.impl.DownLoadServlet</servlet-class>
+  	</servlet>
+ 
+  	<servlet-mapping>
+		<servlet-name>DownLoad Servlet</servlet-name>
+		<url-pattern>/DownLoadServlet</url-pattern>
+  	</servlet-mapping>
+</web-app>
